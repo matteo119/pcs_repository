@@ -14,11 +14,11 @@ int main()
 	somma += arr[i];
 
 /*altri modi per trovare max,min
--->	if (arr[i] > max) {
-		max = arr[i];
+-->	if (arr[i] > massimo) {
+		massimo = arr[i];
 		}
-	if (arr[i] < min) {
-		min = arr[i];
+	if (arr[i] < minimo) {
+		minimo = arr[i];
 		}
 -->	massimo = std::max(arr[i],massimo); (in cmath si chiama fmax)
 	minimo = std::min(arr[i],minimo);   (in cmath si chiama fmin)
