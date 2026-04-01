@@ -39,5 +39,5 @@ int main() {
 	std::cout << "r2 - r6 = " << r2-r6 << "\n";
 	std::cout << "r2 * r6 = " << r2*r6 << "; denominatore: " << (r2*r6).den() << "\n";
 	std::cout << "r2 / r6 = " << r2/r6 << "\n";
-	return 1;
+	return 0;
 }
