@@ -1,0 +1,18 @@
+Confrontando i risultati dei tempi di ordinamento su vettori di piccole dimensioni (10-128), risulta che:
+
+(osservazioni fra stesso gruppo logaritmici/quadratici)
+1) fra gli algoritmi logaritmici, Quicksort (Q) è più veloce di Mergesort (M);
+2) fra gli algoritmi quadratici, Insertionsort (I) è più veloce di Bubblesort (B) e Selectionsort (S);
+3) aumentando la dimensione, fra gli algoritmi quadratici,
+	inizialmente impiegano circa lo stesso tempo, ma alla fine "I" è più veloce di un ordine di grandezza;
+
+(osservazioni migliore/peggiore algoritmo)
+4) fino alla dimensione 100, "I" è il più veloce fra tutti e gli algoritmi logaritmici non lo superano,
+	"Q" supera "I" intorno alla dimensione 128 (2^7);
+5) "B" è il più lento con dimensioni maggiori di 30.
+
+(altre osservazioni)
+5) "Q" supera "S" intorno alla dimensione 40, "M" supera "S" intorno a 100;
+6) l'algoritmo di ordinamento standard non è in assoluto il migliore, ma non si discosta molto dal migliore;
+
+Proposta miglior algoritmo: Insertionsort (fino alla dimensione 128) + Quicksort (per dimensioni maggiori di 128).
